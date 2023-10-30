@@ -132,7 +132,7 @@ echo "=================================== Downloading Splore content... =$1=====
 
 enable_wifi
 
-if [ "$1" = "/mnt/SDCARD/Roms/PICO/Pico Explorer/~Refresh Pico Explorer.miyoocmd" ]; then
+if [ "$(basename "$1")" = "~Refresh Pico Explorer.miyoocmd" ]; then
 	sqlite3 "$DBnames_file" "UPDATE PICO_names SET numberorder = NULL;"
 	Refresh_PicoSection "https://www.lexaloffle.com/bbs/?&orderby=featured&cat=7&sub=2&mode=carts" "Pico Explorer_Featured"
 	Refresh_PicoSection "https://www.lexaloffle.com/bbs/?&cat=7&sub=2&mode=carts" "Pico Explorer_New"

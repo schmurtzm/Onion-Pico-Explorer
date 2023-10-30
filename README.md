@@ -2,6 +2,9 @@
 
 Pico Explorer is an Onion project that replicates the functionality of Splore, the official PICO-8 store, directly on the Onion user interface. After an initial refresh, it will display in your game list the content of Splore with the same categories as the official one.
 
+https://github.com/schmurtzm/Onion-Pico-Explorer/assets/7110113/13129b72-0efc-4435-9fde-50a0382f07bd
+
+
 ## Prerequisites
 
 To use Pico Explorer, you need the following:
