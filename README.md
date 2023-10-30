@@ -6,7 +6,7 @@ Pico Explorer is an Onion project that replicates the functionality of Splore, t
 
 To use Pico Explorer, you need the following:
 
-- A [Miyoo Mini Plus](https://github.com/MiyooCFW/AnberPorts) (with WiFi capability).
+- A Miyoo Mini Plus (with WiFi capability).
 - Onion firmware version 4.2.0 or superior.
 - Extract the contents of this archive on the root of your SD card.
 
@@ -24,6 +24,17 @@ After synchronization, all the Pico Explorer subfolders should be populated, inc
 
 - The search section allows you to easily find your favorite games in Splore, even though the refresh may take a while.
 - Once you find a game you like in Pico Explorer, press the 'Y' button to display the GLO (Game List Options) menu and select "Copy this game to root list" to add it to your personal main game list.
+
+
+
+
+ ## Release Notes
+```
+/*  Release Notes (yyyy/mm/dd):                                                             */
+/*  v1.0 - 2023/10/30 :                                                                     */
+/*    - Initial release                                                                     */
+```
+
 
 ## About the Project
 
