@@ -14,7 +14,7 @@ To use Pico Explorer, you need the following:
 
 Follow these steps to set up and use Pico Explorer:
 
-1. Extract the contents of this archive on the root of your SD card.
+1. Extract the contents of [this archive](https://github.com/schmurtzm/Onion-Pico-Explorer/releases) on the root of your SD card.
 2. Go into your PICO game list -> Pico Explorer.
 3. Select the option to refresh Pico Explorer.
 
