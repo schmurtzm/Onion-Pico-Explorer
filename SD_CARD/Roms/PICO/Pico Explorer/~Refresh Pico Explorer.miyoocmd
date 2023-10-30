@@ -1,0 +1,12 @@
+#!/bin/sh
+echo $0 $*
+progdir=`dirname "$0"`
+cd "$progdir"
+
+./refresh.sh "$1"
+./scanner.sh
+pkill -9 infopanel
+
+# Onion 4.2.0-4.2.2 hotfixes:
+sed -i 's/DynamicLabel = "none"/DynamicLabel="none"/' /mnt/SDCARD/App/romscripts/emu/Netplay.sh
+sed -i 's/DynamicLabel = "none"/DynamicLabel="none"/' /mnt/SDCARD/App/romscripts/Netplay.sh

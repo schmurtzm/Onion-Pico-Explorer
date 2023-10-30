@@ -1,0 +1,22 @@
+#!/bin/sh
+
+echo $0 $*
+progdir=$(dirname "$0")
+
+echo "$progdir"
+cd /mnt/SDCARD/.tmp_update
+runcmd="LD_PRELOAD=/mnt/SDCARD/miyoo/lib/libpadsp.so /mnt/SDCARD/.tmp_update/bin/kbinput"
+
+eval $runcmd >temp
+retcode=$?
+
+kboutput=$(cat temp | tail -1)
+rm -f temp
+
+echo "=====================================kb retcode: $kboutput"
+
+cd "$progdir"
+
+if ! [ -z "$kboutput" ]; then
+    sh "../Pico Explorer/~Refresh Pico Explorer.miyoocmd" "$kboutput"
+fi
